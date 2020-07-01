@@ -1,36 +1,21 @@
-# vuejs heroku example
- is a simple example of vuejs running on heroku
+# vuejsherokuexample
 
+> A Vue.js project
 
+## Build Setup
 
-
-https://medium.com/netscape/deploying-a-vue-js-2-x-app-to-heroku-in-5-steps-tutorial-a69845ace489
-
-
-npm install --global vue-cli
-
-
-Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope LocalMachine
-
-vue init webpack vuejs_heroku_example
-
-cd vuejs_heroku_example
-
+``` bash
+# install dependencies
 npm install
 
+# serve with hot reload at localhost:8080
 npm run dev
 
-
-
-#Heroku
-
-https://devcenter.heroku.com/articles/heroku-cli#download-and-install
-
-heroku create vuejsherokuexample 
-
-heroku config:set NODE_ENV=production --app vuejsherokuexample
-
-
-
-
+# build for production with minification
 npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
+```
+
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
